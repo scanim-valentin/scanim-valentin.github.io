@@ -1,3 +1,7 @@
-table, th, td {
+table, th, td{
   border: 1px solid;
+}
+
+header,footer,h1 {
+        text-align: center ; 
 }
