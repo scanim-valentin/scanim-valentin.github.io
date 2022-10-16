@@ -5,3 +5,7 @@ table, th, td{
 header,footer,h1 {
         text-align: center ; 
 }
+
+.small {
+    font-size: small;
+}
