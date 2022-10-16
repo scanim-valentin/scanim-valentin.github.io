@@ -9,3 +9,11 @@ header,footer,h1 {
 .small {
     font-size: small;
 }
+
+body{ min-height: 100vh; margin:0; }
+
+header{ min-height:50px; }
+footer{ min-height:50px; }
+
+body{ display:flex; flex-direction:column; }
+article{ flex:1; }
