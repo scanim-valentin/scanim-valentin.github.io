@@ -1,14 +1,29 @@
 body {
-    font-family: sans-serif;
-    color: black;
-    background-color: antiquewhite;
+    color: white;
+    background-color: black;
 }
-a{
-    color: indianred;
-}
-table, th, td{
-  border: 1px solid;
 
+#software_table{
+    background-color: cadetblue;
+    color: whitesmoke;
+}
+
+tr:not(.project_table_title){
+    border: 5px solid black;
+}
+
+.project_table_title > tr > th{
+    font-family: monospace;
+    padding: 3%;
+    font-style: italic;
+}
+table{
+    border-collapse: collapse;
+}
+
+
+.project_name_cell > a{
+    color: whitesmoke;
 }
 td {
     padding: 0.5%;
