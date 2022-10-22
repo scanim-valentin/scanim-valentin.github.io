@@ -1,26 +1,53 @@
-body {
-    font-family: sans-serif;
-    color: black;
-    background-color: antiquewhite;
+@font-face {
+    font-family: Nouveau_IBM;
+    src: url("fonts/Nouveau_IBM.ttf");
 }
-a{
-    color: indianred;
+@font-face {
+    font-family: Liberation_Sans_Narrow;
+    src: url("fonts/liberation-sans-narrow.ttf");
 }
-table, th, td{
-  border: 1px solid;
 
+
+body {
+    color: white;
+    background-color: black;
+}
+body{
+    font-family: Liberation_Sans_Narrow, sans-serif;
+}
+
+
+tbody > tr:not(.project_table_title){
+    border-bottom: 1px solid;
+}
+
+.project_table_title > tr > th{
+    font-family: Nouveau_IBM, monospace;
+    padding: 0.3%;
+    font-size: large;
+    font-style: italic;
+}
+
+table{
+    border-collapse: collapse;
+    border: 5px solid
+}
+
+.project_name_cell > a{
+    /*font-family: "Nouveau IBM";*/
 }
 td {
     padding: 0.5%;
 }
 
 header,footer,h1 {
-        text-align: center ; 
+    text-align: center ;
 }
 
 .small {
     font-size: small;
 }
+
 
 body{ min-height: 100vh; margin:0; }
 
@@ -32,9 +59,90 @@ article{ flex:1; width:90%; align-self: center; text-align: justify}
 .project_name_cell {
     width:25%;
     text-align: center;
-    font-family: monospace;
+}
+
+table > thead {
+    transition: letter-spacing ;
+    transition-duration: 0.3s;
+}
+table:hover > thead {
+    transition: letter-spacing ;
+    letter-spacing: 3px;
+    transition-duration: 0.3s;
 }
 
 .project_picture{
     width: 100%;
 }
+
+#page_title{
+    font-size: larger;
+    font-family: Nouveau_IBM, monospace;
+}
+
+/*Software styling*/
+#software_table{
+    background-color: cadetblue;
+    color: whitesmoke;
+    border-color: darkcyan;
+}
+
+#software_table > tbody > tr:not(.project_table_title){
+    border-color: darkcyan;
+}
+
+
+#software_table > .project_table_title > tr > th{
+
+    background-color: darkcyan;
+}
+
+#software_table > tbody > tr > .project_name_cell > a{
+    color: whitesmoke;
+}
+
+
+
+
+/*Embedded styling*/
+#embedded_table{
+    background-color: tan;
+    color: black;
+    border-color: chocolate;
+}
+
+#embedded_table > tbody > tr:not(.project_table_title){
+    border-color: chocolate;
+}
+
+
+#embedded_table > .project_table_title > tr > th{
+    color: whitesmoke;
+    background-color: chocolate;
+}
+
+#embedded_table > tbody > tr > .project_name_cell > a{
+    color: black;
+}
+
+/*Game dev styling*/
+#game_table{
+    background-color: indianred;
+    color: whitesmoke;
+    border-color: darkred;
+}
+
+#game_table > tbody > tr:not(.project_table_title){
+    border-color: darkred;
+}
+
+
+#game_table > .project_table_title > tr > th{
+    color: whitesmoke;
+    background-color: darkred;
+}
+
+#game_table > tbody > tr > .project_name_cell > a{
+    color: whitesmoke;
+}
+

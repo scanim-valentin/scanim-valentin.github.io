@@ -2,285 +2,297 @@
 <html lang="en">
 <head>
     <title> My Portfolio! </title>
-<link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h2>
-            Welcome to my project portfolio.
-        </h2>
-    </header>
-    <article>
-        <br/>
+<header>
+    <p id="page_title">
+        Welcome to my project portfolio.
+    </p>
+</header>
+<article>
+    <br/>
+<!--    <p class="table_title" id="software_development">Software Development</p>-->
+    <table class="project_table" id="software_table">
+        <thead class="project_table_title"><tr><th colspan="100%">Software Development</th></tr></thead>
+        <tbody>
+        <tr class="project_row">
+            <td class="project_name_cell">
+                <a href="https://github.com/scanim-valentin/decentralized-chat-system"> Decentralized chat
+                    agent </a>
+            </td>
+            <td class="project_description_cell">
+                The goal of this app is to allow users on a same network to communicate in a decentralized
+                fashion
+                while
+                enabling the possibility to access their conversation history.
+                <br/>
+                This project was made in <b>Java</b>. It involves :
+                <ul>
+                    <li>
+                        Extensive UML designs
+                    </li>
+                    <li>
+                        Socket programming
+                    </li>
+                    <li>
+                        SQL querying
+                    </li>
+                </ul>
 
-        <h1 id="software_development">Software Development</h1>
-        <table>
-            <tbody>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/scanim-valentin/decentralized-chat-system"> Decentralized chat
-                        agent </a>
-                </td>
-                <td>
-                    The goal of this app is to allow users on a same network to communicate in a decentralized fashion
-                    while
-                    enabling the possibility to access their conversation history.
-                    <br/>
-                    This project was made in <b>Java</b>. It involves :
-                    <ul>
-                        <li>
-                            Extensive UML designs
-                        </li>
-                        <li>
-                            Socket programming
-                        </li>
-                        <li>
-                            SQL querying
-                        </li>
-                    </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/scanim-valentin/c-compiler-project"> <b>System Project Part 1 :</b>
+                    <br/> C Compiler </a>
+            </td>
+            <td>
+                The first part of this project consists in implementing a C-like
+                language compiler using <b>Lex</b> lexical analyser and <b>Yacc</b> parser
+                generator. <br/>
+                To test my code, I also wrote a decompiler as well as an interpreter.
 
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/scanim-valentin/c-compiler-project"> <b>System Project Part 1 :</b> <br/> C Compiler </a>
-                </td>
-                <td>
-                    The first part of this project consists in implementing a C-like
-                    language compiler using <b>Lex</b> lexical analyser and <b>Yacc</b> parser
-                    generator. <br/>
-                    To test my code, I also wrote a decompiler as well as an interpreter.
-                    
-                </td>
-            </tr>
+            </td>
+        </tr>
 
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/Manah7/pir_ppsn2"> Cipherdit </a>
-                </td>
-                <td>
-                    My contribution to this experimental work was part of a larger "initiation to research" ambitious
-                    school
-                    project. It aimed at creating a privacy focused "level-2" online social network
-                    <b>Android app in Java</b>.
-                    It involves exchanging links to message content stored and encrypted on a private Dropbox cloud
-                    storage
-                    over an already existing social network (Reddit) by using steganography.
-                    <br/><br/>
-                    My team was in charge of implementing the encryption layer between the user and cloud storage.
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/scanim-valentin/functional-programming-project"> Pathfinding </a>
-                </td>
-                <td>
-                    Implementation of Bellman-Ford, Djikstra and A* shortest path algorithms in <b>Java</b>.
-                    Extensive unit testing with <b>JUnit</b>.
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/scanim-valentin/functional-programming-project"> Ford-Fulkerson
-                        implementation in OCaml </a>
-                </td>
-                <td>
-                    Implementation of the Ford-Fulkerson maximum-flow algorithm in <b>OCaml</b>, a functional
-                    programming
-                    language.
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/scanim-valentin/projet-robot-cpp"> Real-time wheeled robot control </a>
-                </td>
-                <td>
-                    Remote controls for a small wireless robot in <b>C++</b>.
-                    The main challenge was to manage real time concurrent programming and priorities.
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/scanim-valentin/Fakonv"> Fakonv </a>
-                </td>
-                <td>
-                    A tool to play fake chat conversations witten in <b>Python</b>.
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/scanim-valentin/proto-engine"> <b>(Ongoing project)</b> BMP Rasterizer </a>
-                </td>
-                <td>
-                    A <b>C</b> library to generate bitmap pictures from either pixel alteration or shape description.
-                    The challenging part is to use no specialized library and to re-implement the BMP file structure.
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        <h1 id="embedded_development">Embedded Development</h1>
-        <table>
-            <tbody>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/scanim-valentin/4IR-archi-STM32">
-                        Sailing Boat Replica
-                    </a>
-                </td>
-                <td>
-                    A set of bare metal STM23 libraries written in <b>C</b> to automate the direction and sail deployment of a
-                    sailing boat replica. This project was made using ARM's Keil.
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/AlaeNourdine/be-chti">
-                        Laser game
-                    </a>
-                </td>
-                <td>
-                    This work was made in <b>assembly language</b> with Cortex M3 instruction set via ARM's Keil and runs on
-                    STM32.
-                    The goal was to implement real time FFT for laser detection of specific wavelengths and PWM for
-                    playing
-                    sound.
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/scanim-valentin/c-compiler-project"> <b>System Project Part 2 :</b> <br/> FPGA processor unit</a>
-                </td>
-                <td>
-                    The second part of this project consists in designing a RISC pipeline
-                    based CPU in <b>VHDL</b> using Xilinx Vivado. <br/>
-                    The final design as well as each component unit (ALU, Register bank,
-                    Data memory...) had to be extensively tested to make sure the initial
-                    requirements were met.
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/ScienceAnimation/Buzzers">
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/Manah7/pir_ppsn2"> Cipherdit </a>
+            </td>
+            <td>
+                My contribution to this experimental work was part of a larger "initiation to research"
+                ambitious
+                school
+                project. It aimed at creating a privacy focused "level-2" online social network
+                <b>Android app in Java</b>.
+                It involves exchanging links to message content stored and encrypted on a private Dropbox cloud
+                storage
+                over an already existing social network (Reddit) by using steganography.
+                <br/><br/>
+                My team was in charge of implementing the encryption layer between the user and cloud storage.
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/scanim-valentin/functional-programming-project"> Pathfinding </a>
+            </td>
+            <td>
+                Implementation of Bellman-Ford, Djikstra and A* shortest path algorithms in <b>Java</b>.
+                Extensive unit testing with <b>JUnit</b>.
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/scanim-valentin/functional-programming-project"> Ford-Fulkerson
+                    implementation in OCaml </a>
+            </td>
+            <td>
+                Implementation of the Ford-Fulkerson maximum-flow algorithm in <b>OCaml</b>, a functional
+                programming
+                language.
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/scanim-valentin/projet-robot-cpp"> Real-time wheeled robot
+                    control </a>
+            </td>
+            <td>
+                Remote controls for a small wireless robot in <b>C++</b>.
+                The main challenge was to manage real time concurrent programming and priorities.
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/scanim-valentin/Fakonv"> Fakonv </a>
+            </td>
+            <td>
+                A tool to play fake chat conversations witten in <b>Python</b>.
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/scanim-valentin/proto-engine"> <b>(Ongoing project)</b> BMP
+                    Rasterizer </a>
+            </td>
+            <td>
+                A <b>C</b> library to generate bitmap pictures from either pixel alteration or shape
+                description.
+                The challenging part is to use no specialized library and to re-implement the BMP file
+                structure.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <br/>
+    <table class="project_table" id="embedded_table">
+        <thead class="project_table_title"><tr><th colspan="100%">Embedded Development</th></tr></thead>
+        <tbody>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/scanim-valentin/4IR-archi-STM32">
+                    Sailing Boat Replica
+                </a>
+            </td>
+            <td>
+                A set of bare metal STM23 libraries written in <b>C</b> to automate the direction and sail deployment of
+                a
+                sailing boat replica. This project was made using ARM's Keil.
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/AlaeNourdine/be-chti">
+                    Laser game
+                </a>
+            </td>
+            <td>
+                This work was made in <b>assembly language</b> with Cortex M3 instruction set via ARM's Keil and runs on
+                STM32.
+                The goal was to implement real time FFT for laser detection of specific wavelengths and PWM for
+                playing
+                sound.
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/scanim-valentin/c-compiler-project"> <b>System Project Part 2 :</b> <br/>
+                    FPGA processor unit</a>
+            </td>
+            <td>
+                The second part of this project consists in designing a RISC pipeline
+                based CPU in <b>VHDL</b> using Xilinx Vivado. <br/>
+                The final design as well as each component unit (ALU, Register bank,
+                Data memory...) had to be extensively tested to make sure the initial
+                requirements were met.
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/ScienceAnimation/Buzzers">
                     BuzzQuizz
                 </a></td>
-                <td>
-                    A <b>C</b> script that runs on <b>Arduino Uno</b> to control RGB LED matrix displays and buzzers
-                    with a
-                    set of quiz buttons.
+            <td>
+                A <b>C</b> script that runs on <b>Arduino Uno</b> to control RGB LED matrix displays and buzzers
+                with a
+                set of quiz buttons.
 
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/ScienceAnimation/Buzzers">
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/ScienceAnimation/Buzzers">
                     Perceptron puzzle
                 </a></td>
-                <td>
+            <td>
 
-                    This project is a <b>C</b> script that runs on a Teensy Cortex-M based board.
-                    It is part of a physical electronic game set made to
-                    learn basic AI concepts. <br/>
-                    The goal is to find the correct parameters, symbolized by the LED rings
-                    changing their respective colors as the player turns each rotary
-                    encoders. Let these parameters be found, the device manages
-                    to categorize each element of a set of labeled card containing
-                    RFID chips.
+                This project is a <b>C</b> script that runs on a Teensy Cortex-M based board.
+                It is part of a physical electronic game set made to
+                learn basic AI concepts. <br/>
+                The goal is to find the correct parameters, symbolized by the LED rings
+                changing their respective colors as the player turns each rotary
+                encoders. Let these parameters be found, the device manages
+                to categorize each element of a set of labeled card containing
+                RFID chips.
 
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://github.com/scanim-valentin/closest-neighbours">
-                        Closest Neighbours puzzle
-                    </a>
-                </td>
-                <td>
-                    This small interactive puzzle written in <b>Python</b> to run on a Raspberry Pi is part of an
-                    educative
-                    escape game meant to teach about AI. <br/>
-                    It uses BeautifulSoup to convert SVG content to a set of labeled dots of different sizes and colors
-                    and TKinter to represent and link these dots by clicking on them.<br/>
-                    It is a puzzle, so I will not elaborate on what the expected result is <span class="small">(not because I completely forgot about it)</span>.
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        <h1 id="game_programming">Game Programming</h1>
-        <table>
-            <tbody>
-            <tr>
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://github.com/scanim-valentin/closest-neighbours">
+                    Closest Neighbours puzzle
+                </a>
+            </td>
+            <td>
+                This small interactive puzzle written in <b>Python</b> to run on a Raspberry Pi is part of an
+                educative
+                escape game meant to teach about AI. <br/>
+                It uses BeautifulSoup to convert SVG content to a set of labeled dots of different sizes and colors
+                and TKinter to represent and link these dots by clicking on them.<br/>
+                It is a puzzle, so I will not elaborate on what the expected result is <span class="small">(not because I completely forgot about it)</span>.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <br/>
+    <table class="project_table" id="game_table">
+        <thead class="project_table_title"><tr><th colspan="100%">Game Development</th></tr></thead>
+
+        <tbody>
+        <tr>
             <td class="project_name_cell">
 
                 <a href="https://etud.insa-toulouse.fr/~superPPA/">
-                    <img class="project_picture" src="bitmaps/insario.png" alt="Insario title in Mario-like font. Jumping character on the foreground, night sky with a pastry at the center of the moon."/>
+                    <img alt="Insario title in Mario-like font. Jumping character on the foreground, night sky with a pastry at the center of the moon."
+                         class="project_picture" src="bitmaps/insario.png"/>
                     <br/>INSArio: Super PPA
                 </a>
             </td>
-                <td>A 2D mario-themed platformer game made in <b>Unity</b> with my school's IT club. <br/>
-                    I was in charge of implementing random terrain generation based on adjacency constraints as well as
-                    the
-                    parallax background. <br/>
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="https://scamin.itch.io/marre-des-canards">
-                        <img class="project_picture" src="bitmaps/marre_des_canards.png" alt="Marre des canards title. Background is two baguettes crossing each other on pool water. On the left side: blue duck saw from top. On the right side: big red angry duck saw from top."/>
-                        <br/>
-                        Marre des canards (INSA jam)
+            <td>A 2D mario-themed platformer game made in <b>Unity</b> with my school's IT club. <br/>
+                I was in charge of implementing random terrain generation based on adjacency constraints as well as
+                the
+                parallax background. <br/>
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="https://scamin.itch.io/marre-des-canards">
+                    <img alt="Marre des canards title. Background is two baguettes crossing each other on pool water. On the left side: blue duck saw from top. On the right side: big red angry duck saw from top."
+                         class="project_picture" src="bitmaps/marre_des_canards.png"/>
+                    <br/>
+                    Marre des canards (INSA jam)
                 </a></td>
-                <td>Quite a strange 2D fight game made in <b>Unity</b> as a submission to a school game jam.<br/>
-                    The goal is to steal the opponent's bread crumbs. <br/>
-                    I was in charge of implementing collision, movement and HUD. <br/>
-                    Jam Theme: "Marre des canards" ( a word play between "Duck pond" and "Annoyed by ducks" ) <br/>
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <img class="project_picture" src="bitmaps/instdt.png" alt="Foreground: It's not supposed to do that. Background: Alien desert with pink sky and blue plants on the right side. On the right side: axolotl in a spacesuit looking at an unknown cubic technological item."/>
-                    <br/>
-                    <a href="https://github.com/scanim-valentin/confiture-07102022"> Untitled Jam Submission </a>
-                </td>
-                <td>
-                    A 2D bomberman-like game made in <b>Godot</b> as a submission to a school game jam.<br/>
-                    As the unaware player lays bombs to destroy terrain, they need to learn the effect of each block
-                    type
-                    the hard way to reach the end of the maze in one piece. The effects are randomly assigned at the
-                    start
-                    of a new game, mean each try is unique. <br/>
-                    I was in charge of implementing random effects for each type of block as well as terrain generation
-                    based on a hard-coded ASCII description. <br/>
-                    Jam Theme: "It's not supposed to do that!"<br/>
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <img class="project_picture" src="bitmaps/pie_fight.png" alt="Foreground: WIP written all over. Background: a magpie image with a hat and blush marks poorly drawn over it."/>
-                    <br/>
-                    <a href="index.html"> <b>(Ongoing project)</b> Pie Fight </a>
-                </td>
-                <td>
-                    A multiplayer 3D shooter made in <b>Unreal Engine</b>.<br/>
-                </td>
-            </tr>
-            <tr>
-                <td class="project_name_cell">
-                    <a href="index.html"> <b>(TBA)</b> Promotional game for Energy & Climate week. </a>
-                </td>
-                <td>
-                    <b>TBA</b>.<br/>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        <br/></article>
-    <footer>
-        <a href="http://www.notepad.org/">
-            <img alt="Made with Notepad." src="http://www.notepad.org/notepad12.gif"/>
-        </a>
-
-    </footer>
+            <td>Quite a strange 2D fight game made in <b>Unity</b> as a submission to a school game jam.<br/>
+                The goal is to steal the opponent's bread crumbs. <br/>
+                I was in charge of implementing collision, movement and HUD. <br/>
+                Jam Theme: "Marre des canards" ( a word play between "Duck pond" and "Annoyed by ducks" ) <br/>
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <img alt="Foreground: It's not supposed to do that. Background: Alien desert with pink sky and blue plants on the right side. On the right side: axolotl in a spacesuit looking at an unknown cubic technological item."
+                     class="project_picture" src="bitmaps/instdt.png"/>
+                <br/>
+                <a href="https://github.com/scanim-valentin/confiture-07102022"> Untitled Jam Submission </a>
+            </td>
+            <td>
+                A 2D bomberman-like game made in <b>Godot</b> as a submission to a school game jam.<br/>
+                As the unaware player lays bombs to destroy terrain, they need to learn the effect of each block
+                type
+                the hard way to reach the end of the maze in one piece. The effects are randomly assigned at the
+                start
+                of a new game, mean each try is unique. <br/>
+                I was in charge of implementing random effects for each type of block as well as terrain generation
+                based on a hard-coded ASCII description. <br/>
+                Jam Theme: "It's not supposed to do that!"<br/>
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <!--<img class="project_picture" src="bitmaps/pie_fight.png" alt="Foreground: WIP written all over. Background: a magpie image with a hat and blush marks poorly drawn over it."/>
+                <br/>
+                -->
+                <a href="index.html"> <b>(Ongoing project)</b> Pie Fight </a>
+            </td>
+            <td>
+                A multiplayer 3D shooter made in <b>Unreal Engine</b>.<br/>
+            </td>
+        </tr>
+        <tr>
+            <td class="project_name_cell">
+                <a href="index.html"> <b>(TBA)</b> Promotional game for Energy & Climate week. </a>
+            </td>
+            <td>
+                <b>TBA</b>.<br/>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <br/></article>
+<footer>
+</footer>
 </body>
 </html>
 
